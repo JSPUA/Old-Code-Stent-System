@@ -1,0 +1,263 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+.profile-photo-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+     /* Add padding to create some spacing from the top and right edges */
+    /* Optional: Add a background color for the container */
+     /* Optional: Apply a shadow effect */
+  }
+
+  .profile-photo-content {
+    position: relative;
+    text-align: center;
+    
+  }
+  
+
+  .magnifier-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .blue-icon {
+    color: blue;
+   
+  }
+
+  .orange-icon {
+    color: orange;
+   
+  }
+  .black-icon {
+    color: rgb(0, 0, 0);
+   
+  }
+
+  .brown-icon {
+    color: black;
+   
+  }
+  
+  .red-icon {
+    color: red;
+  }
+  
+  .icon-large {
+    font-size: 1.5rem; /* Adjust the size as needed */
+  }
+  .icon-largeB {
+    font-size: 2.5rem; /* Adjust the size as needed */
+  }
+
+  .transparent-button {
+    background-color: transparent;
+    border: none; /* To remove the button border */
+    padding: 0; /* To remove any extra padding */
+    color: red; /* You can set the text color to red or any other color you prefer */
+    cursor: pointer;
+  }
+  .card-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 10px;
+  }
+  
+  /* table, th, td {
+    border: 1px solid;
+  } */
+
+  .custom-modal {
+    width: 90%; /* Adjust the width as needed (e.g., 80% of the viewport width) */
+    max-width: 900px; /* Set a maximum width for larger screens */
+    max-height: 90%; /* Adjust the max height as needed (e.g., 80% of the viewport height) */
+    margin: 0 auto; /* Center the modal horizontally */
+  }
+
+  .due-badge {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .active-badge {
+    background-color: green;
+    color: white;
+  }
+  
+  .expired-badge {
+    background-color: red;
+    color: white;
+  }
+
+  .custom-dropdown {
+    right: 95px; /* Adjust this value as needed */
+  }
+  
+  @font-face {
+    font-family: 'ds';
+    src: url(../public/DS-DIGIT.ttf);
+  }
+
+  .ds{
+    font-family: ds;
+  }
+
+  .inline-block {
+    display: inline-block;
+    vertical-align: middle; /* Align elements vertically in the middle */
+  }
+
+  /* Add some spacing between elements */
+  .spacer {
+    margin-right: 10px;
+  }
+
+  /* Add some margin between block and label */
+  .block-label {
+    margin-left: 5px;
+  }
+ 
+
+  .container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adjust gap between logo and text as needed */
+  }
+  
+  .logo-container {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from the left */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .text-content {
+    opacity: 0;
+    transform: translateX(100px); /* Start from the right */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  } */
+  
+  .visible2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    .text-content p {
+      font-size: 14px; /* smaller font size on small devices */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .text-content p {
+      font-size: 16px; /* larger font size on larger devices */
+    }
+  }
+
+  .custom-carousel-item img {
+    height: 600px; /* default height */
+  }
+  
+  @media (max-width: 768px) {
+    .custom-carousel-item img {
+      height: 300px; /* reduced height on small screens */
+    }
+  }
+
+
+
+/*for navbar*/
+#responsive-navbar-nav {
+  /* Adjust the alignment, spacing, and any other styles as needed */
+  text-align: left;
+  margin-right: 0;
+
+  /* Styles for smaller screens */
+  @media (max-width: 768px) {
+      text-align: left;
+      margin-top: 20px;
+  }
+
+  @media (max-width: 320px) {
+    text-align: left;
+    margin-top: 20px;
+}
+@media (max-width: 1440px) {
+  margin-top: 20px;
+}
+}
+
+/* Styling for the NavDropdown within the responsive-navbar-nav */
+#responsive-navbar-nav .nav-dropdown {
+  text-align: left;
+  margin-left: 0;
+
+  @media (max-width: 768px) {
+    text-align: left;
+    margin-top: 20px;
+}
+
+@media (max-width: 320px) {
+  text-align: left;
+  margin-top: 20px;
+}
+
+@media (max-width: 1440px) {
+  /* Adjust dropdown position and width for large screens */
+  
+}
+}
+
+/* Styling for the avatar image */
+#responsive-navbar-nav .nav-dropdown img {
+  /* Ensure the avatar image is responsive and well-aligned */
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Additional responsive adjustments */
+body {
+  background-color:#f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5{
+  color: #3b5998;
+  padding: 1px 5px;
+}
+
+.status-legend {
+  text-align: right;
+}
+
+.status-legend .row {
+  margin-bottom: 5px; /* Reduce space between rows */
+}
+
+/* Additional styling for the legend section if needed */
+.status-legend .badge {
+  font-size: 0.8em; /* Smaller badge text */
+}
+
+.status-legend h5 {
+  font-size: 0.9em; /* Smaller heading */
+  margin-bottom: 0; /* Remove bottom margin from heading */
+}
